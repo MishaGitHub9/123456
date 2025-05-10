@@ -2474,11 +2474,11 @@
             .partner-logo {
                 width: auto;
                 height: 70px;
-                margin: 0 25px;
+                margin: 0 30px;
             }
             
             .partner-name {
-                font-size: 30px;
+                font-size: 34px;
             }
         }
         
@@ -2486,11 +2486,11 @@
             .partner-logo {
                 width: auto;
                 height: 60px;
-                margin: 0 15px;
+                margin: 0 20px;
             }
             
             .partner-name {
-                font-size: 24px;
+                font-size: 30px;
                 letter-spacing: 0.5px;
             }
             
@@ -4599,8 +4599,8 @@
     <div class="attraction-filter-modal" id="attraction-filter-modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h3 class="lang-uk">Які пам'ятки ви бажаєте відвідати?</h3>
-            <h3 class="lang-en" style="display: none;">What attractions would you like to visit?</h3>
+            <h3 class="lang-uk">Яким локаціям ви надаєте перевагу?</h3>
+            <h3 class="lang-en" style="display: none;">Which locations do you prefer?</h3>
             
             <div class="attraction-slider-container">
                 <div class="slider-navigation">
@@ -4860,18 +4860,26 @@
             }
             
             .close-modal {
-                top: 15px;
-                right: 20px;
-                font-size: 32px;
+                top: -15px;
+                right: -15px;
+                font-size: 28px;
                 color: #2196F3;
-                background: rgba(255, 255, 255, 0.9);
+                background: white;
                 border-radius: 50%;
-                width: 40px;
-                height: 40px;
+                width: 36px;
+                height: 36px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+            }
+            
+            .modal-content h3 {
+                margin-top: 5px;
+                padding-right: 0;
+                text-align: center;
+                font-size: 22px;
             }
             
             .slider-card {

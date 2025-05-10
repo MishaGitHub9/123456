@@ -2453,11 +2453,11 @@
             .partner-logo {
                 width: auto;
                 height: 90px;
-                margin: 0 50px;
+                margin: 0 40px;
             }
             
             .partner-name {
-                font-size: 40px;
+                font-size: 38px;
             }
         }
         
@@ -2473,12 +2473,29 @@
             
             .partner-logo {
                 width: auto;
-                height: 80px;
-                margin: 0 40px;
+                height: 70px;
+                margin: 0 25px;
             }
             
             .partner-name {
-                font-size: 36px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .partner-logo {
+                width: auto;
+                height: 60px;
+                margin: 0 15px;
+            }
+            
+            .partner-name {
+                font-size: 24px;
+                letter-spacing: 0.5px;
+            }
+            
+            .ticker-container {
+                padding: 10px 0 30px;
             }
         }
     </style>
@@ -4842,6 +4859,21 @@
                 padding: 20px;
             }
             
+            .close-modal {
+                top: 15px;
+                right: 20px;
+                font-size: 32px;
+                color: #2196F3;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            
             .slider-card {
                 height: 280px;
                 padding: 15px;
@@ -4922,11 +4954,12 @@
         };
         
         // Закриття модального вікна при кліку на затемнену область
-        window.onclick = function(event) {
+        attractionFilterModal.addEventListener('click', function(event) {
+            // Перевіряємо, чи клік був на затемненій області, а не на вмісті модального вікна
             if (event.target === attractionFilterModal) {
                 attractionFilterModal.style.display = 'none';
             }
-        };
+        });
         
         // Функція для переходу до потрібного слайду
         function goToSlide(slideIndex) {

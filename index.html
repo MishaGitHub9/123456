@@ -2503,7 +2503,12 @@
     <section id="donate" class="donate-section" style="background-color: #F8FAFC;">
         <div class="container">
             <div class="donate-content">
-                <h2 class="lang-uk" style="font-size: 2.7em;">Підтримати Україну Крипт<span class="bitcoin-icon"></span>ю</h2>
+                <h2 class="lang-uk donate-heading-desktop" style="font-size: 2.7em;">Підтримати Україну Крипт<span class="bitcoin-icon"></span>ю</h2>
+                <h2 class="lang-uk donate-heading-mobile" style="display: none;">
+                    <span>Підтримати</span>
+                    <span>Україну</span>
+                    <span>Крипт<span class="bitcoin-icon"></span>ю</span>
+                </h2>
                 <h2 class="lang-en" style="display: none;">Support Ukraine with Crypt<span class="bitcoin-icon"></span></h2>
                 <p class="lang-uk">
                     Дякуємо за вашу підтримку! Кожен внесок наближає нашу перемогу, рятує життя та підтримує тих, хто цього потребує найбільше.
@@ -5111,5 +5116,26 @@
             findButton.click();
         };
     </script>
+
+    <style>
+        @media (max-width: 768px) {
+            .donate-heading-desktop {
+                display: none !important;
+            }
+            
+            .donate-heading-mobile {
+                display: flex !important;
+                flex-direction: column;
+                font-size: 32px;
+                line-height: 1.3;
+                text-align: center;
+            }
+            
+            .donate-heading-mobile span {
+                display: block;
+                margin-bottom: 4px;
+            }
+        }
+    </style>
 </body>
 </html>
